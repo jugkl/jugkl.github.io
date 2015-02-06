@@ -1,49 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Java User Group Kaiserslautern by jugkl</title>
-  </head>
+---
+layout: default
+---
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">    
+      
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-        <header>
-          <h1>Java User Group Kaiserslautern</h1>
-          <h2><img src="images/jugkl_logo.png" alt="Logo"></h2>
-        </header>
-
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/jugkl" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
-        <hr>
-
-        <section id="main_content">
-          <h3>
-<a id="welcome-to-the-java-user-group-kaiserslautern" class="anchor" href="#welcome-to-the-java-user-group-kaiserslautern" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the Java User Group Kaiserslautern</h3>
-
-<p>Find us here:</p>
-
-<ul>
-<li><a href="https://plus.google.com/communities/102140332179303332410">Google+</a></li>
-<li><a href="https://www.facebook.com/jugKaiserslautern">Facebook</a></li>
-<li><a href="https://twitter.com/JUG_KL">Twitter</a></li>
-<li><a href="https://www.xing.com/m/OWar6pG8mlvxuS74meTMAB">Xing</a></li>
-<li><a href="mailto://jug.kaiserslautern@gmail.com">Mail</a></li>
-</ul>
-        </section>
-
+      <div class="entry">
+        {{ post.content | truncatewords:40}}
       </div>
-    </div>
-  </body>
-</html>
+      
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
