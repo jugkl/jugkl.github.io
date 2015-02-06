@@ -6,7 +6,7 @@
 name: Java User Group Kaiserslautern
 
 # Short bio or description (displayed in the header)
-description: Java Developers froma and around Kaiserslautern/Germany
+description: Java Developers from and around Kaiserslautern/Germany
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/jugkl/jugkl.github.io/master/images/jugkl_logo.png
@@ -20,6 +20,7 @@ footer-links:
   dribbble:
   email: jug.kaiserslautern@gmail.com
   facebook: https://www.facebook.com/jugKaiserslautern
+  google_plus: https://plus.google.com/communities/102140332179303332410
   flickr:
   github: jugkl
   instagram:
