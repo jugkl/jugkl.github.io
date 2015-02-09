@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Up and running!
+title: Java User Group Kaiserlautern ist Online
 ---
 
-The homepage of the Java User Group Kaiserslautern just went live.
+Hallo Welt!
 
-Find us also here:
+Du findest uns auch hier:
 
-* [Google+](https://plus.google.com/communities/102140332179303332410)
 * [Facebook](https://www.facebook.com/jugKaiserslautern)
-* [Twitter](https://twitter.com/JUG_KL)
 * [Xing](https://www.xing.com/m/OWar6pG8mlvxuS74meTMAB)
+* [Twitter](https://twitter.com/JUG_KL)
 * [Mail](mailto://jug.kaiserslautern@gmail.com)
