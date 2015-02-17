@@ -14,3 +14,6 @@ permalink: /events/
 
 * 16.03.2014, 18:30, Fraunhofer IESE, Kaiserslautern
 
+Eine Anfahrtsbeschreibung findet sich [hier](http://www.iese.fraunhofer.de/de/ueberuns/Ihr_Weg_zu_uns.html).
+
+Parkplätze sind vor dem Fraunhofer reichlich vorhanden.
