@@ -312,19 +312,12 @@ footer {
 @import "_highlights";
 @import "_svg-icons";
 
-@media all and (max-width: 320px) {
-  .left-panel {
-    display: block;
+@media all and (max-width: 450px) {
+  #main{
+    display:flex;
+    flex-flow: column;
   }
-  .center-panel {
-    display: block;
-  }
-}
-@media all and (min-width: 321px) {
-  .left-panel {
-    display: inline-block;
-  }
-  .center-panel {
-    display:inline-block;
-  }
+  #left-panel{order:2;}
+  #center-panel{order:1;}
+  #right-panel{order:3;}
 }
