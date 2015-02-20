@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Das nächste Event
+title: Unser Event im Mai
 ---
 
 Hallo,
