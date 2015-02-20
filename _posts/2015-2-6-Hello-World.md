@@ -11,3 +11,5 @@ Du findest uns auch hier:
 * [Xing](https://www.xing.com/m/OWar6pG8mlvxuS74meTMAB)
 * [Twitter](https://twitter.com/JUG_KL)
 * [Mail](mailto://jug.kaiserslautern@gmail.com)
+
+<!---more--->
