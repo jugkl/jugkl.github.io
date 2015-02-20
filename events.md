@@ -17,3 +17,13 @@ permalink: /events/
 Eine Anfahrtsbeschreibung findet sich [hier](http://www.iese.fraunhofer.de/de/ueberuns/Ihr_Weg_zu_uns.html).
 
 Parkplätze sind vor dem Fraunhofer reichlich vorhanden.
+
+## Mai 2015: [Niko Köbler](http://blog.n-k.de/): NodeJS Alternativen auf der VM
+---
+*Weitere Details in Kürze*
+
+* 21.05.2014, 19:00, Fraunhofer IESE, Kaiserslautern
+
+Eine Anfahrtsbeschreibung findet sich [hier](http://www.iese.fraunhofer.de/de/ueberuns/Ihr_Weg_zu_uns.html).
+
+Parkplätze sind vor dem Fraunhofer reichlich vorhanden.
