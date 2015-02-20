@@ -4,6 +4,8 @@ title: Unsere Veranstaltungen
 permalink: /events/
 ---
 
+Ale unsere Veranstaltungen sind kostenlos. Eine Voranmeldung ist nicht nötig.
+
 ## März 2015: Roel Spilker & Reinier Zwitserloot: [Project Lombok](http://projectlombok.org/)
 ---
 **If there's too much code, and it don't look good Who you gonna call?**
