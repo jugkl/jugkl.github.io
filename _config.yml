@@ -29,6 +29,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: JUG_KL
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  xing: java-user-group-kaiserslautern-1074717
 
 # Your disqus shortname, entering this will enable commenting on posts
 disqus:

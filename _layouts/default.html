@@ -41,8 +41,11 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
-      {{ content }}
+    <div id="main" role="main" style="width:100%">
+        <div style="width:20%; display:inline-block; vertical-align: top;">{% include left-panel.html %}</div>
+        <div style="width:55%; display:inline-block; vertical-align: top;">{{ content }}</div>
+        <div style="width:20%; display:inline-block; vertical-align: top;">{% include right-panel.html %}</div>
+
     </div>
 
     <div class="wrapper-footer">
