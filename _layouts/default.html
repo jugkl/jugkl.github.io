@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, maximum-scale=5.0, minimum-scale=0.25'>
 
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -42,10 +42,9 @@
     </div>
 
     <div id="main" role="main" style="width:100%">
-        <div style="width:20%; display:inline-block; vertical-align: top;">{% include left-panel.html %}</div>
-        <div style="width:55%; display:inline-block; vertical-align: top;">{{ content }}</div>
-        <div style="width:20%; display:inline-block; vertical-align: top;">{% include right-panel.html %}</div>
-
+        <div class="left-panel">{% include left-panel.html %}</div>
+        <div class="center-panel"{{ content }}</div>
+        <div class="right-panel">{% include right-panel.html %}</div>
     </div>
 
     <div class="wrapper-footer">

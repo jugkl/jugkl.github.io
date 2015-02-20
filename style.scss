@@ -25,8 +25,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -155,7 +154,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 20px 20px;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -208,6 +207,25 @@ img {
   @include mobile {
     margin: 3px 0;
   }
+}
+
+.left-panel {
+  width:20%;
+  display:inline-block;
+  vertical-align: top;
+  min-width:200px;
+}
+
+.center-panel {
+  width:55%;
+  display:inline-block;
+  vertical-align: top;
+}
+
+.right-panel {
+  width:20%;
+  display:inline-block;
+  vertical-align: top;
 }
 
 nav {
@@ -291,3 +309,20 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "_highlights";
 @import "_svg-icons";
+
+@media all and (max-width: 320px) {
+  .left-panel {
+    display: block;
+  }
+  .center-panel {
+    display: block;
+  }
+}
+@media all and (min-width: 321px) {
+  .left-panel {
+    display: inline-block;
+  }
+  .center-panel {
+    display:inline-block;
+  }
+}
