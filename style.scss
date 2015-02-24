@@ -295,6 +295,32 @@ nav {
   margin:15px 0px 15px 0px;
 }
 
+.event-abstract {
+  font-style: italic;
+}
+
+.event-emphasis {
+  font-weight: bold;
+}
+
+.text-image-parent {
+  width: 100%;
+}
+
+.text-image-left {
+  display:inline-block;
+  vertical-align: top;
+  width: 75%;
+}
+
+.text-image-right {
+  display:inline-block;
+  vertical-align: top;
+  float: right;
+  text-align:center;
+  width:20%;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
