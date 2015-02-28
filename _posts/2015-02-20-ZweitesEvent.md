@@ -24,6 +24,6 @@ wird über Node.js und Evented I/O Alternativen auf der JVM sprechen.
     Mit Hilfe meines „Beer-as-a-Service“ zeige ich Möglichkeiten, wie mittlerweile auch im Unternehmensumfeld
     JavaScript serverseitig eingesetzt werden kann.*
 
-* 16.03.2014, 18:30, Fraunhofer IESE, Kaiserslautern
+* 21.05.2015, 19:00, Fraunhofer IESE, Kaiserslautern
 
 [Mehr Infos](/events)

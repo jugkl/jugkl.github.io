@@ -15,6 +15,6 @@ wir freuen uns, unser erstes Event ankündigen zu können. Am 16. März besuchen
 
 <!---more--->
 
-* 16.03.2014, 18:30, Fraunhofer IESE, Kaiserslautern
+* 16.03.2015, 18:30, Fraunhofer IESE, Kaiserslautern
 
 [Mehr Infos](/events)
