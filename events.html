@@ -1,12 +1,33 @@
 ---
-layout: page
+layout: default
 title: Unsere Veranstaltungen
 permalink: /events/
 ---
 
-Alle unsere Veranstaltungen sind kostenlos. Eine Voranmeldung ist nicht nötig.
+<!-- Nach dem Lombok Vortrag entfernen; auf dem Poster ist ein qr-link zu dieser URL -->
 
-<div style="margin-bottom:20px;">{% include events/2015-03-lombok.html %}</div>
-<div style="margin-bottom:20px;">{% include events/2015-05-nodejs.html %}</div>
+<div style="margin-left: 5px;">
+    <h1>Willkommen bei der Java User Group Kaiserslautern!</h1>
 
+    <p>
+        Wir bieten Vorträge zu aktuellen Themen rund um Java und die JVM.
+        Im Anschluss an die Vorträge können sich alle Interessierten bei gemütlichen Beisammensein austauschen.
+    </p>
+    <p>Die Veranstaltungen sind kostenlos. Eine Voranmeldung ist nicht nötig.</p>
+    <p>Themenvorschläge und Anregungen nehmen wir gerne entgegen.</p>
+
+    <h2>Veranstaltungen</h2>
+
+    <div class="posts">
+        <ul style="list-style-type: none; padding:0; margin:0;">
+            {% for post in site.posts %}
+            <li style="margin:10px 5px;">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <p style="margin:0px 5px;font-style: italic;font-size:0.9em;">{{ post.abstract }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
 
