@@ -292,6 +292,27 @@ nav {
   margin-left: 10px;
 }
 
+.postlist-unstyled {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+
+.postlist-item {
+  margin:10px 5px;
+}
+
+.post-header {
+  margin:0px 0px;
+  font-size:1.1em;
+}
+
+.post-abstract {
+  margin:0px 5px;
+  font-style: italic;
+  font-size:0.9em;
+}
+
 .logo {
   margin:15px 0px 15px 0px;
 }

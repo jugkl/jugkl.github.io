@@ -6,7 +6,7 @@ permalink: /events/
 
 <!-- Nach dem Lombok Vortrag entfernen; auf dem Poster ist ein qr-link zu dieser URL -->
 
-<div style="margin-left: 5px;">
+<div style="margin-left: 10px;">
     <h1>Willkommen bei der Java User Group Kaiserslautern!</h1>
 
     <p>
@@ -19,15 +19,16 @@ permalink: /events/
     <h2>Veranstaltungen</h2>
 
     <div class="posts">
-        <ul style="list-style-type: none; padding:0; margin:0;">
-            {% for post in site.posts %}
-            <li style="margin:10px 5px;">
-                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                <p style="margin:0px 5px;font-style: italic;font-size:0.9em;">{{ post.abstract }}</p>
+        <ul class="postlist-unstyled">
+            {% for post in site.posts reversed %}
+            <li class="postlist-item">
+                <p class="post-header">
+                    {{ post.date | date: "%d.%m.%Y" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </p>
+                <p class="post-abstract">{{ post.abstract }}</p>
             </li>
             {% endfor %}
         </ul>
-
     </div>
 </div>
 
