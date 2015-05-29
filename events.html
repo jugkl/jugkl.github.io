@@ -21,12 +21,14 @@ permalink: /events/
     <div class="posts">
         <ul class="postlist-unstyled">
             {% for post in site.posts reversed %}
+            {% if post.date > site.time %}
             <li class="postlist-item">
                 <p class="post-header">
                     {{ post.date | date: "%d.%m.%Y" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 </p>
                 <p class="post-abstract">{{ post.abstract }}</p>
             </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
