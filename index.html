@@ -12,17 +12,17 @@ layout: default
     <p>Die Veranstaltungen sind kostenlos. Eine Voranmeldung ist nicht nötig.</p>
     <p>Themenvorschläge und Anregungen nehmen wir gerne entgegen.</p>
 
-    <h2>Veranstaltungen</h2>
+    <h2>News</h2>
 
     <div class="posts">
         <ul class="postlist-unstyled">
-            {% for post in site.posts reversed %}
-            {% if post.date > site.time %}
+            {% for post in site.posts %}
+            {% if post.categories contains 'news' %}
             <li class="postlist-item">
                 <p class="post-header">
-                    {{ post.date | date: "%d.%m.%Y" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%d.%m.%Y" }} - {{ post.title }}</a>
                 </p>
-                <p class="post-abstract">{{ post.abstract }}</p>
+                <p>{{ post.excerpt }}</p>
             </li>
             {% endif %}
             {% endfor %}
