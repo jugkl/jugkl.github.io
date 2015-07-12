@@ -4,24 +4,30 @@ title: Unsere Veranstaltungen
 permalink: /events/
 ---
 
-<!-- Nach dem Lombok Vortrag entfernen; auf dem Poster ist ein qr-link zu dieser URL -->
-
 <div style="margin-left: 10px;">
-    <h1>Willkommen bei der Java User Group Kaiserslautern!</h1>
-
-    <p>
-        Wir bieten Vorträge zu aktuellen Themen rund um Java und die JVM.
-        Im Anschluss an die Vorträge können sich alle Interessierten bei gemütlichen Beisammensein austauschen.
-    </p>
-    <p>Die Veranstaltungen sind kostenlos. Eine Voranmeldung ist nicht nötig.</p>
-    <p>Themenvorschläge und Anregungen nehmen wir gerne entgegen.</p>
-
-    <h2>Veranstaltungen</h2>
+    <h1>Veranstaltungen</h1>
 
     <div class="posts">
         <ul class="postlist-unstyled">
             {% for post in site.posts reversed %}
             {% if post.date > site.time %}
+            <li class="postlist-item">
+                <p class="post-header">
+                    {{ post.date | date: "%d.%m.%Y" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </p>
+                <p class="post-abstract">{{ post.abstract }}</p>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h1>Vergangene Veranstaltungen</h1>
+
+    <div class="posts">
+        <ul class="postlist-unstyled">
+            {% for post in site.posts %}
+            {% if post.date < site.time %}
             <li class="postlist-item">
                 <p class="post-header">
                     {{ post.date | date: "%d.%m.%Y" }} - <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
