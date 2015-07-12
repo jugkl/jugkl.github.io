@@ -13,7 +13,7 @@ permalink: /events/
             {% if post.date > site.time and post.categories contains 'talk' %}
             <li class="postlist-item">
                 <p class="post-header">
-                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%d.%m.%Y" }} - {{post.author}} - {{ post.title }}</a>
+                    {{ post.date | date: "%d.%m.%Y" }} - {{post.author}}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 </p>
             </li>
             {% endif %}
@@ -29,7 +29,7 @@ permalink: /events/
             {% if post.date < site.time and post.categories contains 'talk' %}
             <li class="postlist-item">
                 <p class="post-header">
-                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%d.%m.%Y" }} - {{post.author}} - {{ post.title }}</a>
+                    {{ post.date | date: "%d.%m.%Y" }} - {{post.author}}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 </p>
             </li>
             {% endif %}
