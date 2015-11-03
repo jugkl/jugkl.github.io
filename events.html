@@ -10,7 +10,7 @@ permalink: /events/
     <div class="posts">
         <ul class="postlist-unstyled">
             {% for post in site.posts reversed %}
-            {% if post.date > site.time and post.categories contains 'talk' %}
+            {% if post.date >= site.time and post.categories contains 'talk' %}
             <li class="postlist-item">
                 <p class="post-header">
                     {{ post.date | date: "%d.%m.%Y" }} - {{post.author}}: <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>

@@ -3,14 +3,18 @@ layout: default
 ---
 
 <div style="margin-left: 10px;">
-    <h1>Willkommen bei der Java User Group Kaiserslautern!</h1>
+    <div>
+        {% for post in site.categories['talk'] reversed %}
+        {% if post.date >= site.time %}
+        <h2>Nächste Veranstaltung:<br> {{ post.date | date: "%d.%m.%Y" }} - {{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <p class="event-abstract">Weitere Informationen <a href="{{ site.baseurl }}{{ post.url }}" alt="Veranstaltungsinformation {{ post.title }}">hier</a>.</p>
+        {% break %}
+        {% endif %}
+        {% endfor %}
+    </div>
 
-    <p>
-        Wir bieten Vorträge zu aktuellen Themen rund um Java und die JVM.
-        Im Anschluss an die Vorträge können sich alle Interessierten bei gemütlichen Beisammensein austauschen.
-    </p>
-    <p>Die Veranstaltungen sind kostenlos. Eine Voranmeldung ist nicht nötig.</p>
-    <p>Themenvorschläge und Anregungen nehmen wir gerne entgegen.</p>
+    <p>Zur kompletten Liste der <a href="{{ site.baseurl }}/events" alt="Liste der Veranstaltungen">Veranstaltungen</a>.</p>
 
     <h2>News</h2>
 
