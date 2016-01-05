@@ -6,7 +6,8 @@ layout: default
     <div>
         {% for post in site.categories['talk'] reversed %}
         {% if post.date >= site.time %}
-        <h2>Nächste Veranstaltung:<br> {{ post.date | date: "%d.%m.%Y" }} - {{ post.title }}</h2>
+        <h2>Nächste Veranstaltung:</h2>
+            <h3>{{ post.date | date: "%d.%m.%Y" }} - {{ post.title }}</h3>
         <p>{{ post.excerpt }}</p>
         <p class="event-abstract">Weitere Informationen <a href="{{ site.baseurl }}{{ post.url }}" alt="Veranstaltungsinformation {{ post.title }}">hier</a>.</p>
         {% break %}
