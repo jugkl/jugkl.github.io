@@ -54,7 +54,7 @@ excerpt_separator: <!---more--->  # Use this to separate post excerpt from full 
 #
 
 #markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 future: true
 
