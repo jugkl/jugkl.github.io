@@ -399,17 +399,46 @@ footer {
     padding-right: 10px;
     display:block;
   }
+
   .left-panel > div {
     padding: 0 0 0 10px !important;
   }
 
-  .left-panel > div > div:first-child {
+  .left-panel > div > div {
+    border-top: 1px solid lightgray;
+  }
+
+  .left-panel > div > div:first-child {  // Kontakt
     display: none;
+  }
+
+  .left-panel > div > div:nth-child(2) * {  // Newsletter
+    display: inline-block;
+    width: auto;
+  }
+
+  .left-panel > div > div:nth-child(2) div:before {  // Newsletter
+    content: "[";
+  }
+  .left-panel > div > div:nth-child(2) div:after {  // Newsletter
+    content: "]";
   }
 
   .right-panel iframe {
     height: 350px !important;
     min-height: 1px !important;
+  }
+
+  #left-panel .logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+    margin-top: 0;
+    padding-right: 10px;
+  }
+
+  #left-panel .logo img {
+    height: auto;
   }
 
   article {
