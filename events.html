@@ -17,6 +17,13 @@ permalink: /events/
                 </p>
             </li>
             {% endif %}
+            {% if post.date >= site.time and post.categories contains 'tbd' %}
+            <li class="postlist-item">
+                <p class="post-header">
+                    Bald - {{post.author}}:<br><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </p>
+            </li>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
