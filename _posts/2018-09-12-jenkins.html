@@ -1,0 +1,43 @@
+---
+layout: post
+title: Jenkins X - Continuously Driving the Kloud
+author: Gerd Aschemann
+category : talk
+---
+<p class="event-abstract">
+    Cloud schreibt man im Zeitalter von Kubernetes mit K! Alle Ressourcen werden dynamisch von Kubernetes verwaltet.
+    Alle? Build und Deployment über verschiedene Stages liegt oft noch außerhalb, z.B. in einem Build-Server und verschiedenen Repositories (Artefakte, Docker-Images).
+    Mit Jenkins-X wandert alles in einen Kubernetes-Cluster und gewinnt so die nötige Dynamik:
+    <!---more--->
+    <br>
+    <ul>
+    <li>Setup der nötigen Infrastruktur in Kubernetes (Jenkins, Nexus, Docker-Registry, ...),</li>
+    <li>Aufsetzen von Build-Pipelines für jeden Branch und jeden Pull-Request,</li>
+    <li>Deployment in verschiedene Stages (mit Helm),</li>
+    <li>Mandantenfähigkeit (Builds und Environments nach Teams unterscheiden),</li>
+    <li>Steuerung von versionierten Deployment-Konfigurationen (GitOps),</li>
+    <li>Import von bestehenden Projekten,</li>
+    <li>Setup neuer Projekte auf Basis gängiger Microservice-Frameworks (z.B. Spring Boot),</li>
+    <li>u.v.a.m.</li>
+    </ul>
+    Jenkins-X kommt als Entwickler-freundliches Command-Line Tool und bündelt eine Vielzahl von Komponenten hinter einer
+    einheitlichen (opinionated) Fassade.
+    <br>
+    Der Vortrag erklärt die Architektur und Konzepte und führt an ein paar kleinen Beispielen typische Use-Cases vor.
+</p>
+<p class="event-emphasis">12.09.2018, 19:00, <a href="/location">Chaos Computer Club Kaiserslautern</a> </p>
+<h4>Sprecher:</h4>
+<div class="text-image-parent">
+    <div class="text-image-left">
+        <em>Gerd Aschemann</em> berät seine Kunden freiberuflich als Entwickler und Software-Architekt. Sein Schwerpunkt
+        sind dabei oft die Themen Build-/Konfigurations-/Versionsmanagement, der Aufbau von Continuous
+        Integration-/Delivery-Plattformen und Transformation und Neu-Entwicklung von Java Enterprise-Anwendungen.
+        <br>
+        Gerd hat an der TU Darmstadt Informatik studiert und als wissenschaftlicher Mitarbeiter über
+        "Management Verteilter Systeme" geforscht. In den letzten Jahren hat er sich als Mitorganisator der JUG Darmstadt
+        und der Javaland für die Community der deutschen JVM-Nutzer engagiert.
+    </div>
+    <div class="text-image-right">
+        <img src="/images/speaker/Gerd_Aschemann.jpg" alt="Gerd Aschemann"/>
+    </div>
+</div>
